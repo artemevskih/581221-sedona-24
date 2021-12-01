@@ -4,9 +4,190 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page">
+    <header class="page-header">
+      <a href="index.html" class="main-nav__logo">
+        <picture>
+          <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <button type="button" class="main-nav__burger">
+          Скрыть/показать меню
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list--active">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html" class="site-list__link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html" class="site-list__link">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru" class="site-list__link">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="intro">
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="./img/text-index.svg" alt="Слоган Седоны" class="intro__img" width="282" height="214" />
+      </section>
+    </header>
+    <main class="page-main">
+      <div class="page-main__wrapper benefits">
+        <header class="benefits__caption">
+          <h2 class="benefits__title">
+            СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!
+          </h2>
+          <p class="benefits__text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </header>
+        <ol class="benefits__list">
+          <li class="benefits__item benefits__item--large">
+            <div class="benefits__container benefits__container--large">
+              <h3 class="benefits__title">
+                НАСТОЯЩИЙ ГОРОДОК
+              </h3>
+              <p class="benefits__text">
+                СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+              </p>
+            </div>
+            <picture class="benefits__picture">
+              <img src="./img/photo-city@1x1.jpg" alt="Фото города" width="520" height="260" />
+            </picture>
+            <ul class="benefits__sublist">
+              <li class="benefits__sublist-item">
+                <h4 class="benefits__title">
+                  Жилье
+                </h4>
+                <p class="benefits__text">
+                  Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="benefits__sublist-item">
+                <h4 class="benefits__title">
+                  СУВЕНИРЫ
+                </h4>
+                <p class="benefits__text">
+                  Не только китайского, но и местного производства!
+                </p>
+              </li>
+              <li class="benefits__sublist-item">
+                <h4 class="benefits__title">
+                  ЕДА
+                </h4>
+                <p class="benefits__text">
+                  Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="benefits__item benefits__item--large">
+            <div class="benefits__container benefits__container--large">
+              <h3 class="benefits__title">
+                ТАМ ЕСТЬ Мост дьявола
+              </h3>
+              <p class="benefits__text">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно
+              </p>
+            </div>
+            <picture class="benefits__picture">
+              <img src="./img/photo-bridge@1x1.jpg" alt="Фото города" width="520" height="260" />
+            </picture>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__container">
+              <h3 class="benefits__title">
+                НЕБОЛЬШАЯ ПЛОЩАДЬ
+              </h3>
+              <p class="benefits__text">
+                ВСЕ интересные места находятся очень близко
+              </p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__container">
+              <h3 class="benefits__title">
+                КРАСИВАЯ ДОРОГА
+              </h3>
+              <p class="benefits__text">
+                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+              </p>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__container">
+              <h3 class="benefits__title">
+                МАЛО ТУРИСТОВ
+              </h3>
+              <p class="benefits__text">
+                Большинство едет в гранд каньони толпится там
+              </p>
+            </div>
+          </li>
+        </ol>
+        <div class="benefits__hotel-search">
+          <b class="benefits__title">
+            ЗАИНТЕРЕСОВАЛИСЬ?
+          </b>
+          <p class="benefits__text">
+            Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне
+          </p>
+          <button type="button" class="benefits__button button">
+            Найти гостиницу
+          </button>
+        </div>
+      </div>
+    </main>
+    <section class="map">
+      <h3 class="visually-hidden">Карта Седоны</h3>
+      <picture>
+        <img src="./img/map-mobile.jpg" alt="Карта">
+      </picture>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a href="" class="page-footer__hashtag hashtag">#visitSEDONA</a>
+        <ul class="page-footer__list socials">
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <span class="visually-hidden">twitter</span>
+              <img src="./img/icon-twitter.svg" alt="twitter" class="socials__icon" width="17" height="15" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://facebook.com" class="socials__link">
+              <span class="visually-hidden">facebook</span>
+              <img src="./img/icon-facebook.svg" alt="facebook" class="socials__icon" width="9" height="19" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://youtube.com" class="socials__link">
+              <span class="visually-hidden">youtube</span>
+              <img src="./img/icon-youtube.svg" alt="youtube" class="socials__icon" width="20" height="14" />
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a href="https://up.htmlacademy.ru/adaptive/24" class="copyright__link">
+            <img src="./img/htmlacademy.svg" alt="Ссылка на курс HTMLакадемии" width="27" height="34" />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
