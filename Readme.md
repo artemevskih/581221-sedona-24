@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Alexey Artemevskih](https://up.htmlacademy.ru/adaptive/24/user/581221).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
 
 ---
 
