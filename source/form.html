@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="page-header__inner">
+        <a href="index.html" class="page-header__logo">
+          <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item ">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--active">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="main-nav__trigger main-nav__trigger--open">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          <button type="button" class="main-nav__trigger main-nav__trigger--close">
+            <span class="visually-hidden">
+              Закрыть меню
+            </span>
+          </button>
+        </nav>
+        <section class="intro">
+          <h1 class="visually-hidden">Седона</h1>
+          <img src="./img/sedona.svg" alt="Слоган Седоны" class="intro__img" width="229" height="39" />
+        </section>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__inner">
+        <section class="feedback">
+          <header class="feedback__caption">
+            <h2 class="feedback__title">
+              Оставьте свой отзыв
+            </h2>
+            <p>
+              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+            </p>
+          </header>
+          <form action="https://echo.htmlacademy.ru" class="feedback__form form">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">
+                <b>Представьтесь:</b>
+              </legend>
+              <label for="name" class="form__label">
+                Имя<sup>*</sup>:
+                <input type="text" name="name" id="name">
+              </label>
+              <label for="surname" class="form__label">
+                Фамилия<sup>*</sup>:
+                <input type="text" name="surname" id="surname">
+              </label>
+              <label for="patronymic" class="form__label">
+                Отчество:
+                <input type="text" name="patronymic" id="patronymic">
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">
+                <b>Контактная информация:</b>
+              </legend>
+              <label for="tel">
+                Контактный телефон<sup>*</sup>:
+                <input type="tel" name="tel" id="tel">
+              </label>
+              <label for="email">
+                Электронная почта<sup>*</sup>:
+                <input type="email" name="email" id="email">
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--radio">
+              <legend class="form__legend">
+                Ваше Общее впечатление:
+              </legend>
+              <label for="radio-possitive">
+                Скорее положительное
+                <input type="radio" name="impression" value="possitive" id="radio-possitive">
+              </label>
+              <label for="radio-negative">
+                Скорее отрицательное
+                <input type="radio" name="impression" value="negative" id="radio-negative">
+              </label>
+              <label for="radio-neutral">
+                Затрудняюсь ответить
+                <input type="radio" name="impression" value="neutral" id="radio-neutral">
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset--checkbox">
+              <legend class="form__legend">
+                Посещенные достопримечательности:
+              </legend>
+              <label for="bridge">
+                <input type="checkbox" name="visits" id="bridge" value="Мост Дъявола" checked>
+                Мост Дъявола
+              </label>
+              <label for="mountain">
+                <input type="checkbox" name="visits" id="mountain" value="Гора-Колокол" checked>
+                Гора-Колокол
+              </label>
+              <label for="park">
+                <input type="checkbox" name="visits" id="park" value="Слайд-парк" checked>
+                Слайд-парк
+              </label>
+              <label for="rocks">
+                <input type="checkbox" name="visits" id="rocks" value="Красные скалы">
+                Красные скалы
+              </label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">
+                Опишите свои эмоции:
+              </legend>
+              <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <a href="#" class="page-footer__hashtag hashtag">#visitsedona</a>
+        <ul class="page-footer__list socials">
+          <li class="socials__item">
+            <a href="https://twitter.com" class="socials__link">
+              <span class="visually-hidden">Twitter</span>
+              <img src="./img/icon-twitter.svg" alt="Twitter" class="socials__icon" width="17" height="15" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://facebook.com" class="socials__link">
+              <span class="visually-hidden">Facebook</span>
+              <img src="./img/icon-facebook.svg" alt="Facebook" class="socials__icon" width="9" height="19" />
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="https://youtube.com" class="socials__link">
+              <span class="visually-hidden">Youtube</span>
+              <img src="./img/icon-youtube.svg" alt="Youtube" class="socials__icon" width="20" height="14" />
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано:</span>
+          <a href="https://up.htmlacademy.ru/adaptive/24" class="copyright__link">
+            <img src="./img/htmlacademy.svg" alt="Ссылка на курс HTMLакадемии" width="27" height="34" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
