@@ -10,18 +10,18 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="page-header__inner">
+      <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo">
           <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
         </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item ">
+            <li class="main-nav__item main-nav__item--active">
               <a href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a>
                 Фото и видео
               </a>
@@ -37,25 +37,25 @@
               </a>
             </li>
           </ul>
-          <button type="button" class="main-nav__trigger main-nav__trigger--open">
+          <button type="button" class="main-nav__toggle main-nav__toggle--open">
             <span class="visually-hidden">
               Открыть меню
             </span>
           </button>
-          <button type="button" class="main-nav__trigger main-nav__trigger--close">
+          <button type="button" class="main-nav__toggle main-nav__toggle--close">
             <span class="visually-hidden">
               Закрыть меню
             </span>
           </button>
         </nav>
-        <section class="intro">
-          <h1 class="visually-hidden">Седона</h1>
-          <img src="./img/sedona.svg" alt="Слоган Седоны" class="intro__img" width="229" height="39" />
-        </section>
       </div>
+      <section class="intro intro--index">
+        <h1 class="visually-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <img src="./img/sedona.svg" alt="Слоган Седоны" class="intro__img" width="282" height="214" />
+      </section>
     </header>
     <main class="page-main">
-      <div class="page-main__inner">
+      <div class="page-main__wrapper">
         <section class="photos">
           <header class="photos__caption">
             <h2 class="photos__title">
@@ -66,8 +66,8 @@
             </p>
           </header>
           <ul class="photos__list">
-            <li class="photos__item picture">
-              <figure>
+            <li class="photos__item">
+              <figure class="picture">
                 <img src="./img/photo-1-mobile.jpg" alt="Неродные просторы" class="picture__img" width="280" height="280">
                 <figcaption class="picture__description">
                   <div class="picture__caption">
@@ -81,13 +81,13 @@
                         <span class="visually-hidden">Поставить лайк</span>
                       </button>
                     </form>
-                    <span class="like__number">1350</span>
+                    <span class="like__number"><b>1350</b></span>
                   </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="photos__item picture">
-              <figure>
+            <li class="photos__item">
+              <figure class="picture">
                 <img src="./img/photo-2-mobile.jpg" alt="Местная растительность" class="picture__img" width="280" height="280">
                 <figcaption class="picture__description">
                   <div class="picture__caption">
@@ -101,14 +101,13 @@
                         <span class="visually-hidden">Поставить лайк</span>
                       </button>
                     </form>
-                    <span class="like__number">143</span>
+                    <span class="like__number"><b>143</b></span>
                   </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="photos__item picture">
-              <figure>
-                <img src="./img/photo-3-mobile.jpg" alt="Дорога на север" class="picture__img" width="280" height="280">
+            <li class="photos__item">
+              <figure class="picture">
                 <figcaption class="picture__description">
                   <div class="picture__caption">
                     <h3 class="picture__title">Дорога на север</h3>
@@ -121,13 +120,13 @@
                         <span class="visually-hidden">Поставить лайк</span>
                       </button>
                     </form>
-                    <span class="like__number">96</span>
+                    <span class="like__number"><b>96</b></span>
                   </div>
                 </figcaption>
               </figure>
             </li>
-            <li class="photos__item picture">
-              <figure>
+            <li class="photos__item">
+              <figure class="picture">
                 <img src="./img/photo-4-mobile.jpg" alt="Мост дьявола" class="picture__img" width="280" height="280">
                 <figcaption class="picture__description">
                   <div class="picture__caption">
@@ -141,7 +140,7 @@
                         <span class="visually-hidden">Поставить лайк</span>
                       </button>
                     </form>
-                    <span class="like__number">254</span>
+                    <span class="like__number"><b>254</b></span>
                   </div>
                 </figcaption>
               </figure>
@@ -159,25 +158,27 @@
           </p>
         </header>
         <div class="video__content player">
-          <video width="320" height="200" controls poster="./img/video-mobile.jpg">
+          <video width="320" height="200">
           </video>
           <div class="player__controls">
-            <span class="player__slider"></span>
-            <button type="button" class="player__button">
-              <img src="./img/replay.svg" alt="Повторить видео" width="16" height="20" />
-            </button>
-            <button type="button" class="player__button">
-              <img src="./img/subtitles.svg" alt="Включить субтитры" width="32" height="20" />
-            </button>
-            <button type="button" class="player__button">
-              <img src="./img/fullscreen.svg" alt="Развернуть на весь экран" width="20" height="20" />
-            </button>
+            <div class="player__controls-wrapper">
+              <span class="player__slider"></span>
+              <button type="button" class="player__button">
+                <img src="./img/replay.svg" alt="Повторить видео" width="16" height="20" />
+              </button>
+              <button type="button" class="player__button">
+                <img src="./img/subtitles.svg" alt="Включить субтитры" width="32" height="20" />
+              </button>
+              <button type="button" class="player__button">
+                <img src="./img/fullscreen.svg" alt="Развернуть на весь экран" width="20" height="20" />
+              </button>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner">
+      <div class="page-footer__wrapper">
         <a href="#" class="page-footer__hashtag hashtag">#visitsedona</a>
         <ul class="page-footer__list socials">
           <li class="socials__item">
