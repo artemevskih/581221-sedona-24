@@ -9,17 +9,12 @@
   text-transform: uppercase;
 }
 
-.form input {
-
-}
-
 .form__input {
   border: none;
-  padding: 0;
-  margin: 0;
-  background-color: #F2F2F2;
-  height: 58px;
   padding: 15px 20px;
+  margin: 0;
+  background-color: #f2f2f2;
+  height: 58px;
   box-sizing: border-box;
 
   &::placeholder {
@@ -46,17 +41,17 @@
   &--radio::before {
     width: 18px;
     height: 18px;
-    background-color: #EEEEEE;
-    border: 15px solid #EEEEEE;
+    background-color: #eeeeee;
+    border: 15px solid #eeeeee;
     border-radius: 50%;
   }
 
   &--checkbox::before {
     width: 46px;
     height: 46px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     border-radius: 5px;
-    border: 5px solid #EEEEEE;
+    border: 5px solid #eeeeee;
   }
 
   &--radio:checked::before {
@@ -81,7 +76,7 @@
 .form__textarea {
   max-width: 100%;
   border: none;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   padding: 15px 20px;
   box-sizing: border-box;
   width: 100%;

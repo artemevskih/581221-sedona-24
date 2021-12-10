@@ -1,6 +1,5 @@
 .player {
   max-width: 100%;
-
 }
 
 .player video {
@@ -23,7 +22,7 @@
 }
 
 .player__controls-wrapper {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 45px, #F2F2F2 45px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 45px, #f2f2f2 45px);
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
@@ -36,14 +35,14 @@
   background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.2) 50%);
   position: relative;
 
-  &::after{
+  &::after {
     content: "";
     display: block;
     height: 13px;
     width: 13px;
     border-radius: 50%;
     position: absolute;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     top: 50%;
     left: 50%;
     transform: translateY(-50%);
@@ -67,6 +66,3 @@
   margin: 0;
   padding: 0;
 }
-
-
-
