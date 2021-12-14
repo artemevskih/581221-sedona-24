@@ -1,0 +1,54 @@
+.benefits {
+  background-color: $white;
+  text-align: center;
+  counter-reset: numbers;
+}
+
+.benefits__container {
+  padding: 26px;
+}
+
+.benefits__title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  margin: 0;
+
+  &--count::after {
+    display: block;
+    counter-increment: numbers;
+    content: "— №" counter(numbers) " —";
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+}
+
+.benefits__text {
+  margin: 0;
+}
+
+.benefits__item {
+  background-color: $grey;
+
+  &--large {
+    background-color: $light-blue;
+    color: $white;
+  }
+
+  &--sub {
+    background-color: $white;
+    text-align: left;
+  }
+}
+
+.benefits__picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits__picture img {
+  display: block;
+}

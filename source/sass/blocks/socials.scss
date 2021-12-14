@@ -1,0 +1,18 @@
+.socials {
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socials__item {
+  width: 46px;
+  height: 48px;
+  margin: 5px;
+  background-color: $light-blue;
+}
+
+.socials__link {
+  text-align: center;
+  line-height: 48px;
+}
