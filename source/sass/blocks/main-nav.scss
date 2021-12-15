@@ -4,12 +4,23 @@
   padding: 25px 0;
   background-color: $white;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-nav__list {
   position: absolute;
   top: -220px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__item {
@@ -17,6 +28,17 @@
   background-color: $light-blue;
   text-align: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    box-shadow: none;
+    flex: 1 1 20%;
+    padding: 5px;
+
+    &:nth-child(4n+2) {
+      margin-right: 20%;
+    }
+  }
 }
 
 .main-nav__item a {
@@ -26,6 +48,12 @@
   line-height: 40px;
   font-weight: bold;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    color: #000000;
+    font-size: 14px;
+  }
 }
 
 .main-nav__toggle {
@@ -51,5 +79,9 @@
     top: calc(-220px + 15px); // temperary
     background-image: url("../../img/icon-cross.svg");
     background-color: $light-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
