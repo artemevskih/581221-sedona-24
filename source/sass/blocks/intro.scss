@@ -1,7 +1,7 @@
 .intro {
   width: 100%;
   min-height: 389px;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,6 +12,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 518px;
-    background-image: url("../../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
   }
 }
