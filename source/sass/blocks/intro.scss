@@ -1,9 +1,17 @@
 .intro {
   width: 100%;
-  padding: 80px 0;
-  background-image: url("../../img/back-mobile.jpg");
+  min-height: 389px;
+  background-image: url("../img/back-mobile.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 518px;
+    background-image: url("../img/back-desktop.jpg");
+  }
 }
