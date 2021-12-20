@@ -2,11 +2,17 @@
   background: $white;
 }
 
-.page-header__wrapper {
+.page-header__logo {
   position: relative;
+  min-height: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 0;
+    position: static;
+  }
 }
 
-.page-header__logo {
+.page-header__link {
   position: absolute;
   top: 0;
   left: 50%;

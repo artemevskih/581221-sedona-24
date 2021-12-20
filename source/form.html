@@ -11,9 +11,6 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a href="index.html" class="page-header__logo">
-          <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
-        </a>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
@@ -48,8 +45,13 @@
             </span>
           </button>
         </nav>
+        <div class="page-header__logo">
+          <a href="index.html" class="page-header__link">
+            <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
+          </a>
+        </div>
       </div>
-      <section class="intro intro--index">
+      <section class="intro">
         <h1 class="visually-hidden">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <img src="./img/sedona.svg" alt="Слоган Седоны" class="intro__img" width="282" height="214" />
       </section>
@@ -83,16 +85,16 @@
                 <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </label>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend">
                 <b>Контактная информация:</b>
               </legend>
-              <label for="tel" class="form__label">
-                Контактный телефон<sup>*</sup>:
+              <label for="tel" class="form__label form__label--contacts">
+                <span>Контактный телефон<sup>*</sup>:</span>
                 <input class="form__input" type="tel" name="tel" id="tel" placeholder="Введите телефон">
               </label>
-              <label for="email" class="form__label">
-                Электронная почта<sup>*</sup>:
+              <label for="email" class="form__label form__label--contacts">
+                <span>Электронная почта<sup>*</sup>:</span>
                 <input class="form__input" type="email" name="email" id="email" placeholder="Введите e-mail">
               </label>
             </fieldset>
@@ -101,16 +103,16 @@
                 <b>Ваше Общее впечатление:</b>
               </legend>
               <label for="radio-possitive" class="form__label form__label--radio">
-                <b>Скорее положительное</b>
                 <input class="form__input form__input--radio" type="radio" name="impression" value="possitive" id="radio-possitive" checked>
+                <b>Скорее положительное</b>
               </label>
               <label for="radio-negative" class="form__label form__label--radio">
-                <b>Скорее отрицательное</b>
                 <input class="form__input form__input--radio" type="radio" name="impression" value="negative" id="radio-negative">
+                <b>Скорее отрицательное</b>
               </label>
               <label for="radio-neutral" class="form__label form__label--radio">
-                <b>Затрудняюсь ответить</b>
                 <input class="form__input form__input--radio" type="radio" name="impression" value="neutral" id="radio-neutral">
+                <b>Затрудняюсь ответить</b>
               </label>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--checkbox">
@@ -134,15 +136,17 @@
                 <b>Красные скалы</b>
               </label>
             </fieldset>
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--textarea">
               <legend class="form__legend">
                 <b>Опишите свои эмоции:</b>
               </legend>
               <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
-            <button type="submit" class="form__button button">
-              Отправить отзыв
-            </button>
+            <div class="form__button">
+              <button type="submit" class="button">
+                <b>Отправить отзыв</b>
+              </button>
+            </div>
           </form>
         </section>
       </div>

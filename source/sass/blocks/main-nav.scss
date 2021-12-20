@@ -1,7 +1,6 @@
 .main-nav {
   width: 100%;
   position: relative;
-  padding: 25px 0;
   background-color: $white;
   z-index: 1;
 
@@ -11,9 +10,8 @@
 }
 
 .main-nav__list {
-  position: absolute;
-  top: -220px;
   width: 100%;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -71,12 +69,12 @@
   background-color: transparent;
 
   &--open {
-    top: 15px;
+    bottom: calc(-15px - 22px);
     background-image: url("../img/icon-menu.svg");
   }
 
   &--close {
-    top: calc(-220px + 15px); // temperary
+    top: 15px;
     background-image: url("../img/icon-cross.svg");
     background-color: $light-blue;
   }

@@ -1,6 +1,6 @@
 .intro {
   width: 100%;
-  min-height: 389px;
+  min-height: 214px;
   background-image: url("../img/back-mobile.jpg");
   background-position: center;
   background-size: cover;
@@ -10,8 +10,16 @@
   align-items: center;
   justify-content: center;
 
+  &--index {
+    min-height: 389px;
+  }
+
   @media (min-width: $tablet-width) {
-    min-height: 518px;
+    min-height: 462px;
     background-image: url("../img/back-desktop.jpg");
+
+    &--index {
+      min-height: 518px;
+    }
   }
 }
