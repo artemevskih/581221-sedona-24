@@ -48,6 +48,37 @@
   &--sub {
     background-color: $white;
     text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  &--sub::before {
+    content: "";
+    display: block;
+    transform: translateY(25%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+  }
+
+  &--sub_house::before {
+    height: 37px;
+    width: 39px;
+    background-image: url("../../img/icon-house.svg");
+  }
+
+  &--sub_burger::before {
+    height: 34px;
+    width: 40px;
+    background-image: url("../../img/icon-burger.svg");
+  }
+
+  &--sub_souvenir::before {
+    height: 32px;
+    width: 38px;
+    background-image: url("../../img/icon-gift.svg");
   }
 
   @media (min-width: $tablet-width) {

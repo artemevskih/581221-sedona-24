@@ -11,13 +11,8 @@
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="main-nav main-nav--nojs">
-          <a href="index.html" class="main-nav__logo logo">
-            <picture>
-              <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
-            </picture>
-          </a>
-          <ul class="main-nav__list">
+        <nav class="main-nav">          
+          <ul class="main-nav__list main-nav__list--nojs">
             <li class="main-nav__item main-nav__item--active">
               <a>
                 Главная
@@ -44,6 +39,13 @@
               Открыть меню
             </span>
           </button>
+          <div class="page-header__logo">
+            <a href="index.html" class="logo">
+              <picture>
+                <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
+              </picture>
+            </a>
+          </div>
         </nav>
       </div>
       <section class="intro intro--index">
@@ -78,9 +80,9 @@
                 <img src="img/photo-city@1x1.jpg" alt="Фото города" width="520" height="260" />
               </picture>
             </li>
-            <li class="benefits__item benefits__item--sub">
-              <div class="benefits__container benefits__container--sub">
-                <h4 class="benefits__title">
+            <li class="benefits__item benefits__item--sub benefits__item--sub_house">
+              <div class="benefits__container benefits__container--sub ">
+                <h4 class="benefits__title benefits__title--sub">
                   Жилье
                 </h4>
                 <p class="benefits__text">
@@ -88,9 +90,9 @@
                 </p>
               </div>
             </li>
-            <li class="benefits__item benefits__item--sub">
-              <div class="benefits__container benefits__container--sub">
-                <h4 class="benefits__title">
+            <li class="benefits__item benefits__item--sub benefits__item--sub_souvenir">
+              <div class="benefits__container benefits__container--sub ">
+                <h4 class="benefits__title benefits__title--sub">
                   Сувениры
                 </h4>
                 <p class="benefits__text">
@@ -98,9 +100,9 @@
                 </p>
               </div>
             </li>
-            <li class="benefits__item benefits__item--sub">
+            <li class="benefits__item benefits__item--sub benefits__item--sub_burger">
               <div class="benefits__container benefits__container--sub">
-                <h4 class="benefits__title">
+                <h4 class="benefits__title benefits__title--sub">
                   Еда
                 </h4>
                 <p class="benefits__text">
@@ -205,9 +207,8 @@
     <script>
       var navMain = document.querySelector('.main-nav__list');
       var navToggle = document.querySelector('.main-nav__toggle');
-      navMain.classList.remove('main-nav--nojs');
+      navMain.classList.remove('main-nav__list--nojs');
       navToggle.addEventListener('click', function() {
-        console.log('click');
         if (navMain.classList.contains('main-nav__list--closed')) {
           navMain.classList.remove('main-nav__list--closed');
           navMain.classList.add('main-nav__list--opened');
