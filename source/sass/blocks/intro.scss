@@ -1,9 +1,12 @@
 .intro {
   width: 100%;
   min-height: 214px;
-  background-image: url("../img/back-mobile.jpg");
-  background-position: center;
-  background-size: cover;
+  background-image: url("../img/intro-triangle.svg"),
+    url("../img/back-mobile.jpg");
+  background-position: bottom center,
+    center center;
+  background-size: contain,
+    cover;
   background-repeat: no-repeat;
   text-align: center;
   display: flex;
@@ -16,8 +19,11 @@
 
   @media (min-width: $tablet-width) {
     min-height: 462px;
-    background-image: url("../img/back-desktop.jpg");
-
+    background-image: url("../img/intro-triangle.svg"),
+      url("../img/back-desktop.jpg");
+    background-size: 1200px 57px,
+      cover;
+    
     &--index {
       min-height: 518px;
     }

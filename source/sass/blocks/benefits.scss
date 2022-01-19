@@ -31,9 +31,18 @@
 
 .benefits__list {
   display: grid;
+  background-color: $light-blue;
+  background-image: url("../../img/arrow-background.svg");
+  background-size: 768px 37px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 37px;
+  
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
+    background-image: none;
+    padding-top: 0;
   }
 }
 
@@ -50,36 +59,9 @@
     text-align: left;
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: center;
-  }
-
-  &--sub::before {
-    content: "";
-    display: block;
-    transform: translateY(25%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;    
-  }
-
-  &--sub_house::before {
-    height: 37px;
-    width: 39px;
-    background-image: url("../../img/icon-house.svg");
-  }
-
-  &--sub_burger::before {
-    height: 34px;
-    width: 40px;
-    background-image: url("../../img/icon-burger.svg");
-  }
-
-  &--sub_souvenir::before {
-    height: 32px;
-    width: 38px;
-    background-image: url("../../img/icon-gift.svg");
-  }
+    align-items: center;
+    padding: 10px 20px;
+  } 
 
   @media (min-width: $tablet-width) {
     &--large {
@@ -87,6 +69,11 @@
 
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &--sub {
+      flex-direction: column;
+      text-align: center;
     }
   }
 }
@@ -110,4 +97,11 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.benefits__icon svg {
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 75px;
+  }
 }
