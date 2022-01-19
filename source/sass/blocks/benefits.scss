@@ -37,7 +37,6 @@
   background-position: center top;
   background-repeat: no-repeat;
   padding-top: 37px;
-  
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,7 +60,7 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 20px;
-  } 
+  }
 
   @media (min-width: $tablet-width) {
     &--large {

@@ -1,9 +1,9 @@
 .page-header__logo {
-    min-height: 50px;
-    position: relative;
-    
-    @media (min-width: $tablet-width) {
-        position: static;
-        min-height: auto;
-    }
+  min-height: 50px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    min-height: auto;
+  }
 }
