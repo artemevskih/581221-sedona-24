@@ -5,7 +5,7 @@
     url("../img/back-mobile.jpg");
   background-position: bottom center,
     center center;
-  background-size: contain,
+  background-size: 1200px 57px,
     cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -21,8 +21,6 @@
     min-height: 462px;
     background-image: url("../img/intro-triangle.svg"),
       url("../img/back-desktop.jpg");
-    background-size: 1200px 57px,
-      cover;
 
     &--index {
       min-height: 518px;
