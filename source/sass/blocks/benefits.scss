@@ -81,9 +81,12 @@
   display: block;
   margin: 0;
   padding: 0;
+  max-height: 260px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/4;
+    max-height: 256px;
 
     &--reverse {
       grid-column: 1/3;

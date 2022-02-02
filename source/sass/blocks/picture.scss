@@ -5,10 +5,26 @@
   position: relative;
 }
 
+.picture__image-wrapper {
+  margin: 0;
+  max-height: 280px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    max-height: 267px;
+
+    &--large {
+      max-height: 400px;
+    }
+  }
+}
+
 .picture__img {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .picture__description {

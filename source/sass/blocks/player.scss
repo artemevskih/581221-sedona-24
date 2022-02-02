@@ -1,6 +1,15 @@
 .player {
+  width: 280px;
   max-width: 100%;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .player video {
@@ -86,7 +95,10 @@
   }
 }
 
-.player__button img {
-  margin: 0;
-  padding: 0;
+.player__icon {
+  @media (min-width: $tablet-width) {
+    & path {
+      fill: $white;
+    }
+  }
 }
