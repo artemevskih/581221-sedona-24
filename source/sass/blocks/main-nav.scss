@@ -34,6 +34,7 @@
 .main-nav__item {
   min-height: 50px;
   background-color: $light-blue;
+  color: $white;
   display: flex;
   justify-content: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
@@ -43,15 +44,24 @@
     box-shadow: none;
     flex: 1 1 20%;
     padding: 5px;
+    color: #000000;
+
+    &--active {
+      color: #766357;
+    }
 
     &:nth-child(4n+2) {
       margin-right: 20%;
+    }
+
+    &:not(.main-nav__item--active) a:hover {
+      color: #81b3d2;
     }
   }
 }
 
 .main-nav__item a {
-  color: $white;
+  color: inherit;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 40px;
@@ -60,7 +70,6 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
-    color: #000000;
     font-size: 14px;
   }
 }
