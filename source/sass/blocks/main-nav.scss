@@ -39,6 +39,20 @@
   justify-content: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
+  @media (max-width: 767px) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+
+      & a {
+        opacity: 0.3;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     background-color: transparent;
     box-shadow: none;
@@ -56,6 +70,10 @@
 
     &:not(.main-nav__item--active) a:hover {
       color: #81b3d2;
+    }
+
+    &:not(.main-nav__item--active) a:active {
+      color: rgba(0, 0, 0, 0.3);
     }
   }
 }
