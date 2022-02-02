@@ -13,7 +13,7 @@
       <div class="page-header__wrapper">
         <nav class="main-nav">
           <ul class="main-nav__list main-nav__list--nojs">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a href="index.html">
                 Главная
               </a>
@@ -23,7 +23,7 @@
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a>
                 Форма отзыва
               </a>
@@ -42,6 +42,7 @@
           <div class="page-header__logo">
             <a href="index.html" class="logo">
               <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                 <img src="./img/icon.svg" alt="Логотип Седоны" width="102" height="84" />
               </picture>
             </a>
@@ -70,15 +71,15 @@
                 <b>Представьтесь:</b>
               </legend>
               <label for="name" class="form__label">
-                Имя<sup>*</sup>:
+                <span>Имя<sup>*</sup>:</span>
                 <input class="form__input" type="text" name="name" id="name" placeholder="Петр">
               </label>
               <label for="surname" class="form__label">
-                Фамилия<sup>*</sup>:
+                <span>Фамилия<sup>*</sup>:</span>
                 <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов">
               </label>
               <label for="patronymic" class="form__label">
-                Отчество:
+                <span>Отчество:</span>
                 <input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </label>
             </fieldset>

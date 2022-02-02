@@ -4,3 +4,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.logo img {
+  @media (min-width: $desktop-width) {
+    width: 196px;
+    height: 96px;
+  }
+}

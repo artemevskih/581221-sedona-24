@@ -18,10 +18,10 @@
 
 .form__fieldset {
   border: 0;
-  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  padding: 5px 0;
 
   @media (min-width: $tablet-width) {
     &--radio {
@@ -37,6 +37,8 @@
     &--checkbox {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      width: 500px;
+      margin: 0 auto;
     }
   }
 
@@ -48,6 +50,7 @@
 
     &--checkbox {
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 100%;
     }
   }
 }
@@ -99,6 +102,7 @@
     vertical-align: middle;
     background-color: #f2f2f2;
     box-sizing: content-box;
+    margin-right: 25px;
   }
 
   &--radio ~ b::before {
@@ -130,18 +134,33 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin: 10px;
 
   &--contacts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
 
-  @media (min-width: $desktop-width) {
-    &--contacts {
+    @media (min-width: $desktop-width) {
       flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    & span {
+      margin-left: 20px;
+
+      @media (min-width: $desktop-width) {
+        width: 50%;
+        margin-left: none;
+      }
     }
   }
+}
+
+.form__label span {
+  margin-right: 15px;
 }
 
 .form__label b {
