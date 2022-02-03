@@ -1,42 +1,11 @@
-.benefits {
-  background-color: $white;
+.benefits__caption {
   text-align: center;
-  counter-reset: numbers;
-}
-
-.benefits__container {
-  padding: 26px;
-}
-
-.benefits__title {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-  margin: 0;
-
-  &--count::after {
-    display: block;
-    counter-increment: numbers;
-    content: "— №" counter(numbers) " —";
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-  }
-}
-
-.benefits__text {
-  margin: 0;
 }
 
 .benefits__list {
+  counter-reset: numbers;
   display: grid;
-  background-color: $light-blue;
-  background-image: url("../../img/arrow-background.svg");
-  background-size: 768px 37px;
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding-top: 37px;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -47,63 +16,49 @@
 
 .benefits__item {
   background-color: $grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
-  &--large {
+  &--picture {
+    width: 100%;
+    min-height: 280px;
+    height: auto;
+    background-image: url("/img/photo-city@1x1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_reverse {
+      background-image: url("/img/photo-bridge@1x1.jpg");
+    }
+  }
+
+  &--color {
     background-color: $light-blue;
     color: $white;
   }
 
-  &--sub {
-    background-color: $white;
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px 20px;
+  &--count {
+    &::after {
+      display: block;
+      counter-increment: numbers;
+      content: "— №" counter(numbers) " —";
+    }
   }
 
   @media (min-width: $tablet-width) {
-    &--large {
-      grid-column: 1/-1;
+    &--picture {
+      grid-column: 2/4;
 
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    &--sub {
-      flex-direction: column;
-      text-align: center;
+      &_reverse {
+        grid-column: 1/3;
+        grid-row: 3/4;
+      }
     }
   }
 }
 
-.benefits__picture {
-  display: block;
-  margin: 0;
-  padding: 0;
-  max-height: 260px;
-  overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 2/4;
-    max-height: 256px;
-
-    &--reverse {
-      grid-column: 1/3;
-      grid-row: 1;
-    }
-  }
-}
-
-.benefits__picture img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.benefits__icon svg {
-  @media (min-width: $tablet-width) {
-    width: 75px;
-    height: 75px;
-  }
+.benefits__item p {
+  order: 1;
 }
