@@ -3,11 +3,13 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .logo img {
   @media (min-width: $desktop-width) {
     width: 196px;
     height: 96px;
+
   }
 }

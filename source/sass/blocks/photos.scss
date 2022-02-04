@@ -12,6 +12,8 @@
 }
 
 .photos__list {
+  list-style-type: none;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   width: 280px;

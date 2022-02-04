@@ -8,8 +8,11 @@
 }
 
 .main-nav__list {
+  list-style-type: none;
   z-index: 2;
   width: 100%;
+  padding: 0;
+  margin: 0;
 
   &--closed {
     display: none;
@@ -32,33 +35,12 @@
 }
 
 .main-nav__item {
-  min-height: 50px;
-  background-color: $light-blue;
-  color: $white;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-  @media (max-width: 767px) {
-    &:hover {
-      background-color: #669ec0;
-    }
-
-    &:active {
-      background-color: #5496bd;
-
-      & a {
-        opacity: 0.3;
-      }
-    }
-  }
-
   @media (min-width: $tablet-width) {
-    background-color: transparent;
-    box-shadow: none;
+    text-align: center;
+    min-height: 50px;
+    line-height: 50px;
     flex: 1 1 20%;
     padding: 5px;
-    color: #000000;
 
     &--active {
       color: #766357;
@@ -67,28 +49,55 @@
     &:nth-child(4n+2) {
       margin-right: 20%;
     }
-
-    &:not(.main-nav__item--active) a:hover {
-      color: #81b3d2;
-    }
-
-    &:not(.main-nav__item--active) a:active {
-      color: rgba(0, 0, 0, 0.3);
-    }
   }
 }
 
-.main-nav__item a {
-  color: inherit;
+.main-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 10px 50px;
+
+  background-color: $light-blue;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.2), 0px 1px 0px 0px rgba(255, 255, 255, 0.2) inset;
+
+
+  color: $white;
+  text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: bold;
-  padding: 10px 5px;
+
+  font: 700 18px/40px "PT Sans", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     display: inline;
-    font-size: 14px;
+    padding: 10px;
+    background-color: transparent;
+
+    font: 700 14px/26px "PT Sans", "Arial", sans-serif;
+
+    color: #000000;
+    box-shadow: none;
+
+    &:not(.main-nav__link--active) {
+      cursor: pointer;
+
+      &:hover {
+        color: #81b3d2;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &--active {
+      cursor: default;
+      color: #766357;
+    }
   }
 }
 
@@ -115,7 +124,7 @@
 
   &--close {
     background-image: url("../img/icon-cross.svg");
-    background-color: $light-blue;
+    background-color: transparent;
   }
 
   @media (min-width: $tablet-width) {
