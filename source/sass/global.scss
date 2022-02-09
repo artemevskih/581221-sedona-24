@@ -11,7 +11,34 @@
   overflow: hidden;
 }
 
-body {
+// body {
+//   margin: 0;
+//   padding: 0;
+// }
+
+.page__body {
   margin: 0;
   padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.no-mobile {
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+
+.no-tablet {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: none;
+  }
+}
+
+.no-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+

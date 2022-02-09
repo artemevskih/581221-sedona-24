@@ -1,0 +1,63 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 158px;
+  background: #e1eef6 url("../img/back-mobile@1x.jpg");
+  background-size: 900px 389px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &--index {
+    min-height: 389px;
+  }
+
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+    background: #e1eef6 url("../img/back-mobile@2x.jpg");
+    background-size: 900px 389px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    background: #e1eef6 url("../img/back-desktop@1x.jpg");
+    background-size: 1200px 518px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 290px;
+
+    &--index {
+      min-height: 519px;
+    }
+  }
+
+  @media (min-resolution: 144dpi) and (min-width: $tablet-width),
+  (min-resolution: 1.5dppx) and (min-width: $tablet-width) {
+    background: #e1eef6 url("../img/back-desktop@2x.jpg");
+    background-size: 1200px 518px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+}
+
+.intro__img {
+  margin: 0 0 10px 0;
+
+  @media (min-width: $tablet-width) {
+    &--index {
+      width: 460px;
+      height: 350px;
+    }
+  }
+}
+
+.intro__background {
+  position: absolute;
+  fill: white;
+  bottom: 0;
+}
+

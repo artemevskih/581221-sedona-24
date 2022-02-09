@@ -1,0 +1,47 @@
+.page-header {
+  position: relative;
+  min-height: 50px;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.page-header__toogle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: translate(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+
+  &--close .page-header__toogle-icon--open {
+    display: block;
+  }
+
+  &--open .page-header__toogle-icon--open {
+    display: none;
+  }
+
+  &--close .page-header__toogle-icon--close {
+    display: none;
+  }
+
+  &--open .page-header__toogle-icon--close {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
