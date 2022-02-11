@@ -1,0 +1,61 @@
+.photo {
+  position: relative;
+}
+
+.photo__image-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.photo__picture {
+  overflow: hidden;
+}
+
+.photo__image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+  object-fit: cover;
+  height: 280px;
+
+  @media (min-width: $tablet-width) {
+    height: 267px;
+
+     &--full {
+       height: 400px;
+     }
+  }
+
+
+}
+
+.photo__description {
+  font: 400 14px/26px "PT Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $white;
+  }
+}
+
+.photo__title {
+  margin: 0;
+}
+
+.photo__author {
+  margin: 0;
+}

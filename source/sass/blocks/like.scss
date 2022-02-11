@@ -1,0 +1,21 @@
+.like {
+  display: flex;
+  flex-direction: row;
+}
+
+.like button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.like__number {
+  margin: 0 0 0 15px;
+}
+
+.like svg {
+  @media (min-width: $desktop-width) {
+    fill: $white;
+  }
+}

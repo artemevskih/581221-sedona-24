@@ -5,42 +5,58 @@
   min-height: 158px;
   background: #e1eef6 url("../img/back-mobile@1x.jpg");
   background-size: 900px 389px;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
   overflow: hidden;
 
   &--index {
-    min-height: 389px;
+    height: 389px;
+    background-position: center top;
+
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-position: center top;
+    }
   }
 
   @media (min-resolution: 144dpi),
   (min-resolution: 1.5dppx) {
     background: #e1eef6 url("../img/back-mobile@2x.jpg");
     background-size: 900px 389px;
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
   }
 
   @media (min-width: $tablet-width) {
+    min-height: 290px;
     background: #e1eef6 url("../img/back-desktop@1x.jpg");
     background-size: 1200px 518px;
     background-position: center top;
     background-repeat: no-repeat;
-    min-height: 290px;
+    height: 290px;
+
+    @media (min-resolution: 144dpi) and (min-width: $tablet-width),
+    (min-resolution: 1.5dppx) and (min-width: $tablet-width) {
+      background: #e1eef6 url("../img/back-desktop@2x.jpg");
+      background-size: 1200px 518px;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+    }
 
     &--index {
-      min-height: 519px;
+      height: 519px;
+      background-position: center top;
     }
   }
 
-  @media (min-resolution: 144dpi) and (min-width: $tablet-width),
-  (min-resolution: 1.5dppx) and (min-width: $tablet-width) {
-    background: #e1eef6 url("../img/back-desktop@2x.jpg");
-    background-size: 1200px 518px;
-    background-position: center top;
-    background-repeat: no-repeat;
+  @media (min-width: $desktop-width) {
+    height: 300px;
+
+    &--index {
+      height: 519px;
+    }
   }
 }
 

@@ -11,16 +11,16 @@
   overflow: hidden;
 }
 
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
+.page {
+  background-color: #e7e5e5;
+}
 
 .page__body {
   margin: 0;
   padding: 0;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: $white;
 }
 
 .no-mobile {

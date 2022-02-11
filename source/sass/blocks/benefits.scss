@@ -3,6 +3,11 @@
   text-transform: uppercase;
   text-align: center;
   counter-reset: benefits;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .benefits__title {
@@ -19,13 +24,6 @@
   width: 1200px;
   height: 57px;
   fill: $light-blue;
-}
-
-.benefits__container {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
 
 .benefits__item {

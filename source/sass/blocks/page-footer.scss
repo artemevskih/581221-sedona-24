@@ -1,0 +1,31 @@
+.page-footer__wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 35px;
+  }
+}
+
+.page-footer__socials {
+  margin: 5px;
+}
+
+.page-footer__hashtag {
+  margin: 5px;
+  font: 700 21px/26px "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.page-footer__copyright {
+  margin: 5px;
+  font: 400 14px/26px "PT Sans", "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+}

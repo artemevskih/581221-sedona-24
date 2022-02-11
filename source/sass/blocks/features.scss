@@ -2,6 +2,7 @@
   list-style-type: none;
   margin: 0;
   padding: 20px;
+  font: 400 14px/21px "PT Sans", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -25,6 +26,11 @@
 
     padding: 0 20px;
   }
+}
+
+.features h4,
+.features p {
+  margin: 5px 0;
 }
 
 .features__item svg {
