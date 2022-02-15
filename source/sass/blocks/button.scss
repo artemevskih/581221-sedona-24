@@ -1,11 +1,13 @@
 .button {
   display: block;
   max-width: 458px;
+  width: 100%;
   margin: 0 auto;
   border: none;
   background-color: $light-blue;
   font: 700 21px/56px "PT Sans", "Arial", sans-serif;
   color: $white;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
 }

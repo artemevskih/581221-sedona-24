@@ -76,10 +76,10 @@
             <input type="text" class="form__input" name="patronymic" id="patronymic" placeholder="Александрович">
           </label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--input">
-          <legend><b>Контактная информация</b></legend>
-          <label class="form__label form__label--input form__label--wrap" for="phone">
-            <span>контактный телефон<sup>*</sup>:</span>
+        <fieldset class="form__fieldset form__fieldset--contacts form__fieldset--full">
+          <legend><b>Контактная информация:</b></legend>
+          <label class="form__label form__label--input form__label--contacts" for="phone">
+            <span><span class="no-desktop">контактный </span>телефон*:</span>
             <div class="form__input-wrapper form__input-wrapper--phone">
               <input type="tel" class="form__input" name="phone" id="phone" placeholder="Введите телефон">
               <div class="form__input-icon">
@@ -89,8 +89,8 @@
               </div>
             </div>
           </label>
-          <label class="form__label form__label--input form__label--wrap" for="email">
-            <span>электронная почта<sup>*</sup>:</span>
+          <label class="form__label form__label--input form__label--contacts" for="email">
+            <span>электронная почта*:</span>
             <div class="form__input-wrapper form__input-wrapper--email">
               <input type="email" class="form__input" name="email" id="email" placeholder="Введите e-mail">
               <div class="form__input-icon">
@@ -104,24 +104,46 @@
         <fieldset class="form__fieldset form__fieldset--radio">
           <legend><b>ваше общее впечатление:</b></legend>
           <label class="form__label form__label--radio" for="positive">
-            <input type="radio" name="radio" value="positive" id="positive" checked>
+            <input class="form__hidden-input form__hidden-input--radio" type="radio" name="radio" value="positive" id="positive" checked hidden>
             <b>Скорее положительное</b>
           </label>
           <label class="form__label form__label--radio" for="negative">
-            <input type="radio" name="radio" value="negative" id="negative">
+            <input class="form__hidden-input form__hidden-input--radio" type="radio" name="radio" value="negative" id="negative" hidden>
             <b>Скорее отрицательное</b>
           </label>
           <label class="form__label form__label--radio" for="neutral">
-            <input type="radio" name="radio" value="neutrals" id="neutral">
+            <input class="form__hidden-input form__hidden-input--radio" type="radio" name="radio" value="neutrals" id="neutral" hidden>
             <b>Затруднаяюсь ответить</b>
           </label>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--checkbox">
+        <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--full">
           <legend><b>посещенные достопримечательности:</b></legend>
-          <label for="">
-            <input type="checkbox" name="checkbox" value="bridge" checked>
+          <label class="form__label form__label--checkbox" for="bridge">
+            <input class="form__hidden-input form__hidden-input--checkbox" type="checkbox" name="checkbox" value="bridge" id="bridge" checked hidden>
+            <b>Мост Дьявола</b>
+          </label>
+          <label class="form__label form__label--checkbox" for="mountain">
+            <input class="form__hidden-input form__hidden-input--checkbox" type="checkbox" name="checkbox" value="mountain" id="mountain" checked hidden>
+            <b>Гора-Колокол</b>
+          </label>
+          <label class="form__label form__label--checkbox" for="park">
+            <input class="form__hidden-input form__hidden-input--checkbox" type="checkbox" name="checkbox" value="park" id="park" checked hidden>
+            <b>Слайд-парк</b>
+          </label>
+          <label class="form__label form__label--checkbox" for="rocks">
+            <input class="form__hidden-input form__hidden-input--checkbox" type="checkbox" name="checkbox" value="rocks" id="rocks" hidden>
+            <b>Красные скалы</b>
           </label>
         </fieldset>
+        <fieldset class="form__fieldset form__fieldset--full">
+          <legend><b>опишите свои эмоции:</b></legend>
+          <textarea class="form__textarea" name="review" id="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <div class="form__button-container">
+          <button class="form__button button" type="submit">
+            отправить отзыв
+          </button>
+        </div>
       </form>
     </section>
   </main>
