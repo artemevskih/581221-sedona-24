@@ -43,6 +43,13 @@
   &--wrap {
     flex-wrap: wrap;
   }
+
+  &--radio,
+  &--checkbox {
+    font: 700 18px/26px "PT Sans", "Arial", sans-serif;
+    text-transform: none;
+    color: #000000;
+  }
 }
 
 .form__input-wrapper {
@@ -54,15 +61,15 @@
   & input {
     margin: 0;
   }
+}
 
-  &--phone::after {
-    content: "";
-    min-width: 58px;
-    height: 58px;
-    display: block;
-    background: red url("../img/sprite.svg#icon-twitter");
-    background-size: cover;
-  }
+.form__input-icon {
+  min-width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
 }
 
 .form__input {
