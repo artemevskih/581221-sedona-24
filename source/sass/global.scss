@@ -10,3 +10,26 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.page__body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.85em;
+}
+
+.button__link {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(129, 179, 210, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 16px;
+}
