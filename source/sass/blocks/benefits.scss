@@ -3,10 +3,21 @@
   counter-reset: numbers;
 }
 
+.benefits__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .benefits__content {
   background-color: rgba(238, 238, 238, 1);
   padding: 25px;
   box-sizing: border-box;
+  position: relative;
+  width: 100%;
 
   &--lite {
     background-color: rgba(129, 179, 210, 1);
@@ -16,6 +27,13 @@
   &--lite .benefits__text {
     color: rgba(255, 255, 255, 1);
   }
+
+  @media (min-width: $tablet-width) {
+    &--reverse {
+      grid-column: 3/4;
+      grid-row: 3;
+    }
+  }
 }
 
 .benefits__caption,
@@ -23,6 +41,8 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+
 
 .benefits__text {
   color: rgba(51, 51, 51, 1);
@@ -51,5 +71,19 @@
 
   &--bridge {
     background-image: url("../../img/photo-bridge@1x1.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/4;
+
+    &--reverse {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.benefits__list {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
   }
 }

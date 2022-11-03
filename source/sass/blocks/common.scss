@@ -1,6 +1,12 @@
 .common {
   font: 14px/26px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .common__inner {
@@ -15,6 +21,18 @@
   font-size: 21px;
   font-weight: 700;
   text-align: center;
+}
+
+.common__background {
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  fill: rgba(129, 179, 210, 1);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .common__text {

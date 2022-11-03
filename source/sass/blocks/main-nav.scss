@@ -7,6 +7,11 @@
   font-weight: bold;
   line-height: 40px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 .main-nav__logo {
@@ -14,6 +19,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 10;
 }
 
 .main-nav__list {
@@ -25,9 +31,32 @@
   margin: 0;
   list-style-type: none;
   z-index: 2;
+  min-height: 56px;
 
   &--close {
-    top: -1000px;
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -35,21 +64,43 @@
   background-color: rgba(129, 179, 210, 1);
   mix-blend-mode: normal;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+  &:last-child {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+    width: 20%;
+    box-shadow: none;
+
+    &:nth-child(4n-2) {
+      margin-right: 20%;
+    }
+  }
 }
 
 .main-nav__link {
-  text-align: center;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: rgba(0, 0, 0, 1);
+  }
 }
 
 .main-nav__button {
+  display: block;
   position: absolute;
   z-index: 3;
-  top: 10px;
+  top: 50%;
   right: 15px;
+  transform: translateY(-50%);
   border: 0;
   padding: 0;
   outline: 0;
@@ -60,5 +111,9 @@
 
   &--close {
     background-image: url("../../img/icon-cross.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
