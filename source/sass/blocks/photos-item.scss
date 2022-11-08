@@ -7,6 +7,13 @@
       max-height: 400px;
     }
   }
+
+  @media (min-width: $tablet-width) {
+
+    &--lead .photos-item__img {
+      max-height: 400px;
+    }
+  }
 }
 
 .photos-item__picture {

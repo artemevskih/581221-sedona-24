@@ -16,6 +16,12 @@ img {
   height: auto;
 }
 
+.no-mobile {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .page__body {
   padding: 0;
   margin: 0;
