@@ -1,14 +1,2 @@
-@import "fonts.scss";
-@import "variables.scss";
-@import "global.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/intro.scss";
-@import "blocks/common.scss";
-@import "blocks/benefits.scss";
-@import "blocks/features.scss";
-@import "blocks/map.scss";
-@import "blocks/socials.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/photos.scss";
-@import "blocks/photos-item.scss";
-@import "blocks/form.scss";
+@import "./variables.scss";
+@import "blocks/nav-list.scss";

@@ -1,0 +1,16 @@
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    background-color: $nav-background;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+}
+
